@@ -1,0 +1,29 @@
+:host {
+  pointer-events: none;
+  display: grid;
+  position: absolute;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  place-content: center;
+  table{
+    margin-top:-12rem;
+    &hidden {
+      display:none;
+    }
+    thead {
+      font-size:2rem;
+    }
+
+    background: var(--color);
+    color: var(--background);
+    td, th {
+      padding:0.5rem;
+    }
+    th {
+      text-align: left;
+    }
+  }
+
+}
